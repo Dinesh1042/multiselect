@@ -1,13 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+import App from "./App";
+import { OptionsProvider } from "./components/context/OptionsContext";
+import SelectedOptions from "./components/SelectedOptions/SelectedOptions";
+import reportWebVitals from "./reportWebVitals";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <OptionsProvider>
+      <App />
+      <SelectedOptions />
+    </OptionsProvider>
   </React.StrictMode>
 );
 

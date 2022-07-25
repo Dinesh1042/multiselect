@@ -1,0 +1,26 @@
+.multiSelect {
+  border: 1px solid #333;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.multiSelectOptionWrapper {
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+  background-color: #fff;
+}
+
+.multiSelectOption {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+input {
+  border: 1px solid;
+}
